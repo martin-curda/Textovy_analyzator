@@ -4,7 +4,7 @@ author: Martin Čurda
 email: curda.mart@gmail.com
 discord: Martin Č.#0010
 '''
-import pprint
+#import pprint
 registrovany_user = {"bob": "123", "ann": "pass123", "mike": "password123", "liz": "pass123"}
 cara = "-" * 40
 TEXTS = ['''
