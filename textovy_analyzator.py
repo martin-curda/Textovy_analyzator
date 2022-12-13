@@ -53,11 +53,11 @@ if cislo_textu.isnumeric():
         print("Selected number is not in range, terminating the program..")
         exit()
 else:
-    print("DAS IST KEINE ZAHL!! terminating the program..")
+    print("That is not a number!! terminating the program..")
     exit()
 
 
-jednotliva_slova = TEXTS[int(cislo_textu) - 1].split(" ")
+jednotliva_slova = TEXTS[int(cislo_textu) - 1].split()
 # print(jednotliva_slova)
 vycistena_slova = list()
 
@@ -91,7 +91,7 @@ print("There are", len(titlecase_words), "titlecase words")
     # POČET SLOV PSANÝCH VELKÝM PÍSMENEM
 uppercase_words = list()
 for slovo in vycistena_slova:
-    if slovo.isupper():
+    if slovo.isupper() and slovo.isalpha():
         uppercase_words.append(slovo)
     else:
         pass
@@ -99,7 +99,7 @@ print("There are", len(uppercase_words), "uppercase words.")
     # POČET SLOV PSANÝCH MALÝM PÍSMENEM
 lowercase_words = list()
 for slovo in vycistena_slova:
-    if slovo.islower():
+    if slovo.islower() and slovo.isalpha():
         lowercase_words.append(slovo)
     else:
         pass
